@@ -37,6 +37,7 @@ val PlaceholderLoadingKeyboard = TextKeyboard(
             TextKey(data = TextKeyData(code = 0)),
         ),
         arrayOf(
+            TextKey(data = TextKeyData(code = KeyCode.TAB, type = KeyType.ENTER_EDITING, label = "tab")),
             TextKey(data = TextKeyData(code = 0)),
             TextKey(data = TextKeyData(code = 0)),
             TextKey(data = TextKeyData(code = 0)),

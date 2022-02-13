@@ -14,9 +14,15 @@ on:
       - "ROADMAP.md"
   pull_request:
     branches: [ master ]
-
 jobs:
-  build:
+  isvalid:
+    if: startsWith(github.event.commits[0].message, 'v')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run
+        run: echo "Good to go"
+  apk:
+    needs: isvalid
     runs-on: ubuntu-latest
 
     steps:
